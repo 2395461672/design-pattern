@@ -12,7 +12,7 @@ import com.sn.pattern.factory.simple.entity.Dog;
  * @created: 2020/08/05 16:12:08
  * @Version: 1.0
  */
-public class AnimalSimpleFactory {
+public class SimpleFactory {
 
     public static AbstractAnimal getAnimal(AnimalEnum animalEnum) {
         switch (animalEnum) {

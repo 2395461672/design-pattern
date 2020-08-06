@@ -2,7 +2,7 @@ package factory.simple;
 
 import com.sn.pattern.factory.simple.constant.AnimalEnum;
 import com.sn.pattern.factory.simple.entity.AbstractAnimal;
-import com.sn.pattern.factory.simple.factory.AnimalSimpleFactory;
+import com.sn.pattern.factory.simple.factory.SimpleFactory;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
@@ -14,16 +14,16 @@ import org.junit.Test;
  * @Version: 1.0
  */
 @Slf4j
-public class AbstractAnimalTest {
+public class SimpleFactoryTest {
 
     @Test
     public void testAnimal() {
-        AbstractAnimal cat = AnimalSimpleFactory.getAnimal(AnimalEnum.Cat);
+        AbstractAnimal cat = SimpleFactory.getAnimal(AnimalEnum.Cat);
         if(cat != null) {
             cat.eat();
         }
 
-        AbstractAnimal dog = AnimalSimpleFactory.getAnimal(AnimalEnum.DOG);
+        AbstractAnimal dog = SimpleFactory.getAnimal(AnimalEnum.DOG);
         if(dog != null) {
             dog.eat();
         }
